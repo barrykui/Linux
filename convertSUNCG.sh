@@ -6,7 +6,7 @@ SUNCG_COMMAND=/home/jack/Applications/SUNCGtoolbox/gaps/bin/x86_64/scn2scn
 COUNTER=0
 for DIR in `ls $SEARCH_DIR`
 do
-  # echo $DIR
+  echo $DIR
   cd $SEARCH_DIR$DIR
   $SUNCG_COMMAND house.json house.obj
 
