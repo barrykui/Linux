@@ -25,5 +25,5 @@ for file in os.listdir(CURRENT_DIRECTORY):
 
         with open(current_file_name, 'w') as f:
             json.dump(current_file_name, f, indent=1)
-            print("Finished!")
+            print(current_file_name + " Finished!")
 
