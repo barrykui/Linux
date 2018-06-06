@@ -7,8 +7,8 @@ from types import *
 
 PREVIOUS_DIRECTORY = '.'
 CURRENT_DIRECTORY = '.'
-COLORMAP=[{"lineColor": [0, 255, 0, 128], "fillColor": [255, 0, 0, 128]}
-]
+COLORMAP={"yellow_cube":{"lineColor": [0, 255, 0, 128], "fillColor": [255, 0, 0, 128]}
+}
 
 for file in os.listdir(CURRENT_DIRECTORY):
     if(os.path.splitext(file)[1] != '.json'):
