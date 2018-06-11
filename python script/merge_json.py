@@ -49,6 +49,6 @@ for dirs in os.listdir('./test'):
                 previous_file['shapes'].extend(current_file['shapes'])
                 current_file['shapes']  = previous_file['shapes']
 
-                with open(current_file_name+'.test', 'w') as f:
+                with open(current_file_name, 'w') as f:
                     json.dump(current_file, f, indent=1)
-                    print(current_file_name+'.test' + " Finished!")
+                    print(current_file_name + " Finished!")
