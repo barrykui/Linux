@@ -28,6 +28,6 @@ for image_name in image_list:
     new_im = Image.new('RGB', (total_width, max_height))
 
     new_im.paste(image_1, (0,0))
-    new_im.paste(image_1, (image_1.size[0],0))
+    new_im.paste(image_2, (image_1.size[0],0))
 
     new_im.save(os.path.join('train', save_name))
