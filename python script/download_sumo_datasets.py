@@ -10,6 +10,7 @@ Usage: python3 download_sumo_datasets.py <destination_dir> <sumo_server_name>
 
 Example:
     python3 download_sumo_datasets.py ~/download https://example.com/
+    python3 download_sumo_datasets.py SUMO https://s3-us-west-1.amazonaws.com/sumochallenge/
 
 Note: You will receive the server name after requesting access to the data through
       the sign-up process.
