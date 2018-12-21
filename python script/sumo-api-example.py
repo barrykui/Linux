@@ -12,10 +12,10 @@ import matplotlib.pyplot as plt
 
 CSV_PATH = parutil.get_file_path('/mnt/lustre/sunjiankai/Dataset/sample_data/metadata/categories.csv')
 colored_category = ColoredCategory(CSV_PATH)
-print('colored_categoty.category_id_to_rgb(133):\n', colored_categoty.category_id_to_rgb(133))
-print('colored_categoty.category_name_to_rgb(\'shoes\'):\n', colored_categoty.category_name_to_rgb('shoes'))
-print('colored_categoty.LUT:\n', colored_categoty.LUT)
-lut = colored_categoty.LUT
+print('colored_category.category_id_to_rgb(133):\n', colored_category.category_id_to_rgb(133))
+print('colored_category.category_name_to_rgb(\'shoes\'):\n', colored_category.category_name_to_rgb('shoes'))
+print('colored_category.LUT:\n', colored_category.LUT)
+lut = colored_category.LUT
 print('lut.shape[0]: ', lut.shape[0], 'lut.shape[1]: ', lut.shape[1])
 
 from sumo.base.vector import Vector2, Vector2f, Vector3, Vector3f, on_left, unitize
