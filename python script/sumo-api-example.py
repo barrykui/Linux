@@ -43,7 +43,7 @@ from sumo.semantic.project_converter import ProjectConverter
 from sumo.semantic.project_scene import ProjectScene
 
 glb_path = parutil.get_file_path('/mnt/lustre/sunjiankai/Dataset/sample_data/sumo-output')
-meshes_model = ProjectScene.load(glb_path)
+meshes_model = ProjectScene.load(glb_path, "bounding_box_sample")
 bbox_model = ProjectConverter().run(meshes_model, "bounding_box")
 print('bbox_model.elements[\'1087\'].bounds.corners():\n', bbox_model.elements['1087'].bounds.corners())
 print('bbox_model.elements[\'1087\'].pose.t', bbox_model.elements['1087'].pose.t)
