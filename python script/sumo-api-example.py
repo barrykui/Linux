@@ -1,7 +1,7 @@
 # API example for SUMO challenge
 
-# import sys
-# sys.path.append('/mnt/lustre/sunjiankai/App/sumo-challenge/sumo-api')
+import sys
+sys.path.append('/mnt/lustre/sunjiankai/App/sumo-challenge/sumo-api')
 
 import sumo
 from libfb.py import parutil
@@ -23,7 +23,7 @@ print('unitize(Vector3(100, 201, 50)): ', unitize(Vector3(100, 201, 50)))
 
 # rot3_tests
 from sumo.geometry.rot3 import Rot3, ENU_R_CAMERA
-import numpy as np 
+import numpy as np
 wRc = np.transpose(
             np.array([[1, 0, 0], [0, 0, -1], [0, 1, 0]], dtype=float)
         )
@@ -42,9 +42,8 @@ print('multi.rgb.shape: ', multi.rgb.shape, 'multi.range.shape (Depth): ', multi
 from sumo.semantic.project_converter import ProjectConverter
 from sumo.semantic.project_scene import ProjectScene
 
-glb_path = parutil.get_file_path('/mnt/lustre/sunjiankai/Dataset/sample_data/sumo-output')
-meshes_model = ProjectScene.load(glb_path, "bounding_box_sample")
+glb_path = parutil.get_file_path('/mnt/lustre/sunjiankai/Dataset/sample_data/')
+meshes_model = ProjectScene.load(glb_path,"sumo-output")
 bbox_model = ProjectConverter().run(meshes_model, "bounding_box")
 print('bbox_model.elements[\'1087\'].bounds.corners():\n', bbox_model.elements['1087'].bounds.corners())
 print('bbox_model.elements[\'1087\'].pose.t', bbox_model.elements['1087'].pose.t)
-
